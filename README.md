@@ -3,6 +3,10 @@ Copilot Agent to query SharePoint List Knowledge source with 15000 rows of data.
 
 
 This Copilot Studio agent is designed to intelligently translate user questions about a library’s book catalog into precise OData $filter strings for querying a SharePoint list. It ensures natural language queries are converted into valid, structured expressions that match the schema of the catalog. By automatically handling text searches, numeric and date comparisons, and publisher name normalization, the agent helps users quickly find books without needing technical knowledge. It also supports combining multiple conditions to answer complex queries, making library searches seamless and efficient.
+<br/><br/>
+## Technical Implementation <br/>
+On the technical side, the knowledge source is SharePoint list containing over 15000 rows and 25 columns, yet the agent performs queries smoothly without issues.<br/>
+To optimize performance, a few key columns were indexed, ensuring faster lookups and efficient filtering even on large datasets.
 <br/><br/><br/><br/>
 
 <img width="1842" height="882" alt="image" src="https://github.com/user-attachments/assets/f4d8dad8-d221-4619-8122-7c6c8e983928" /><br/>
@@ -155,5 +159,16 @@ Total Price Sum: outputs('Compose:_XML_Sum')
 Max Price: outputs('Compose:_Max_Price')
 Latest Release: outputs('Compose:_Sort_CloseDate')
 ```
+
+---
+
+# SharePoint List
+<img width="1902" height="816" alt="image" src="https://github.com/user-attachments/assets/20a14afe-c747-477b-a00e-6931997d4df6" /> <br /><br />
+
+---
+### SharePoint Index Columns
+<img width="768" height="502" alt="image" src="https://github.com/user-attachments/assets/f7edff0a-59df-4113-9dd4-5efbf79a3708" />
+
+
 
 
